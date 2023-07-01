@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="chat_container">
+    <div class="chat-header">
+      <h2>Chatbot</h2>
+    </div>
+    <div class="chat-log" id="chatLog">
+      <!-- Chat log will be dynamically populated here -->
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." autofocus>
+      <button type="button" id="sendButton"  class="chat__send">Send</button>
+    </div>
+  </div>
+
+  <!--
+  <script src="script.js"></script>
+<script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='gptScript.js') }}"></script>
+   -->
+<script src="{{ url_for('static', filename='script2.js') }}"></script>
+
+
+</body>
+</html>
